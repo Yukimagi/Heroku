@@ -1,15 +1,16 @@
 {
     "version": 2,
     "builds": [
-        {
-            "src": "app_tflite.py",
-            "use": "@vercel/python",
-            "config": {
-                "pythonVersion": "3.11.2"
-            }
+      {
+        "src": "app_tflite.py",
+        "use": "@vercel/python",
+        "config": {
+          "pythonVersion": "3.11.2"
         }
+      }
     ],
-    "routes": [
-        {"src": "/(.*)", "dest": "/app_tflite.py"}
+    "rewrites": [
+      { "source": "/(.*)", "destination": "/app_tflite.py" }
     ]
   }
+  
