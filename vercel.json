@@ -1,16 +1,5 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app_tflite.py",
-        "use": "@vercel/python",
-        "config": {
-          "pythonVersion": "3.11.2"
-        }
-      }
-    ],
     "rewrites": [
-      { "source": "/(.*)", "destination": "/app_tflite.py" }
+      { "source": "/(.*)", "destination": "/app_tflite" }
     ]
-  }
-  
+}
